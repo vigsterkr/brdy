@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+label {
+  display: inline-block;
+  width: 160px;
+}
+
+input {
+  margin-left: 20px;
+  max-width: 60px;
+}
+
+.video-enter {
+  opacity: 0.01;
+}
+
+.video-enter.video-enter-active {
+  opacity: 1;
+  transition: opacity 3000ms ease-in;
+}
+
+.video-exit {
+  opacity: 1;
+}
+
+.video-exit.video-exit-active {
+  opacity: 0.01;
+  transition: opacity 3000ms ease-in;
+}
+
+.choice-enter {
+  opacity: 0.01;
+}
+
+.choice-enter.choice-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+  transition-delay: 1s;
+}
+
+.choice-exit {
+  opacity: 1;
+}
+
+.choice-exit.choice-exit-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}
+
+.mask-enter {
+  opacity: 0.01;
+}
+
+.mask-enter.mask-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.mask-exit {
+  opacity: 1;
+}
+
+.mask-exit.mask-exit-active {
+  opacity: 0.01;
+  transition: opacity 1s ease-in;
+  transition-delay: 500ms;
+}
+
+.mask {
+  background-color: black;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+.bird-icon {
+  position: absolute;
+  z-index: 0;
+}
+
+.choice-icon {
+  position: absolute;
+  z-index: 3;
+}
+
+.choice-icon.choice-icon-left {
+  left: 7%;
+  top: 19%;
+  width: 30%;
+}
+
+.choice-icon.choice-icon-right {
+  right: 11%;
+  top: 19%;
+  width: 30%;
+}
+
+/* hotspot info bg */
+.hotspot-info-mask {
+  z-index: 0;
+  position: absolute;
+  top: 0; left:0; right:0; bottom:0;
+  background: rgba(34,34,34,0.75);
+  filter: blur(5px);
+  -webkit-filter: blur(6px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+}
